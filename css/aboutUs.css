@@ -6,7 +6,11 @@
     box-sizing: border-box;
     font-family: "Roboto Condensed";
 }
-
+header {
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0 !important;
+}
 :root {
     --lead: #212121;
     --gold-finger: #F2BD12;
@@ -157,13 +161,7 @@ header {
     background-color: transparent;
 }
 
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--gold-finger);
-    margin-left: 0;
-    transition: color 0.3s ease;
-}
+
 
 .navList {
     display: flex;

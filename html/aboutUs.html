@@ -11,78 +11,87 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/aboutUs.css">
+    
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <nav class="navbar flex between wrapper">
-            <div class="logo">Foodie.</div>
+    <!-- UNIVERSAL NAVBAR - Copy this to ALL your HTML files -->
+<header>
+    <nav class="navbar flex between wrapper">
+        <div class="logo">Foodie.</div>
 
-            <!-- DESKTOP MENU -->
-            <ul class="navList flex gap-3 between">
-                <li>
-                    <a href="../HTML/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../HTML/index.html#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="../HTML/index.html#services">Services</a>
-                </li>
-                <li>
-                    <a href="#" class="active">About us</a>
-                </li>
-                <li>
-                    <a href="../HTML/contactUs.html">Contacts</a>
-                </li>
-            </ul>
+        <!-- DESKTOP MENU -->
+        <ul class="navList flex gap-3 between">
+            <li>
+                <a href="./index.html#home">Home</a>
+            </li>
+            <li>
+                <a href="./index.html#services">Services</a>
+            </li>
+            <li>
+                <a href="./index.html#menu">Menu</a>
+            </li>
+            <li>
+                <a href="./aboutUs.html">About us</a>
+            </li>
+            <li>
+                <a href="./contactUs.html">Contacts</a>
+            </li>
+        </ul>
 
-            <div class="desktop-action flex gap-2">
-                <button class="desktop-action theme-toggle" aria-label="Toggle dark mode">
+        <div class="desktop-action flex gap-2">
+            <button class="desktop-action theme-toggle" aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <a href="#" class="cart-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-value">0</span>
+            </a>
+            <a href="./signup.html" class="btn">Sign in
+                &nbsp;
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+
+            <a href="#" class="hamberger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <ul class="mobile-menu">
+            <li>
+                <a href="./index.html#home">Home</a>
+            </li>
+            <li>
+                <a href="./index.html#services">Services</a>
+            </li>
+            <li>
+                <a href="./index.html#menu">Menu</a>
+            </li>
+            <li>
+                <a href="./aboutUs.html">About us</a>
+            </li>
+            <li>
+                <a href="./contactUs.html">Contacts</a>
+            </li>
+            <li>
+                <button class="theme-toggle mobile-theme-toggle" aria-label="Toggle dark mode">
                     <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
                 </button>
-                <a href="#" class="cart-icon">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span class="cart-value">0</span>
-                </a>
-                <a href="../HTML/signup.html" class="btn">Sign in
+            </li>
+            <li>
+                <a href="./signup.html" class="btn">Sign in
                     &nbsp;
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
-                <a href="#" class="hamberger">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-
-            <!-- MOBILE MENU -->
-            <ul class="mobile-menu">
-                <li>
-                    <a href="../HTML/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../HTML/index.html#menu">Menu</a>
-                </li>
-                <li>
-                    <a href="../HTML/index.html#services">Services</a>
-                </li>
-                <li>
-                    <a href="#" class="active">About us</a>
-                </li>
-                <li>
-                    <a href="../HTML/contactUs.html">Contacts</a>
-                </li>
-                <li>
-                    <a href="../HTML/signup.html" class="btn">Sign in
-                        &nbsp;
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
     <!-- Hero Section -->
     <section class="hero">
